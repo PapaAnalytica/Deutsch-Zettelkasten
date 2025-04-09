@@ -1,0 +1,517 @@
+<!DOCTYPE html> <html><head>
+		<title>🗃️ Reflexive</title>
+		<base href="../">
+		<meta id="root-path" root-path="../">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=1.0, maximum-scale=5.0">
+		<meta charset="UTF-8">
+		<meta name="description" content="Papa Vault - 🗃️ Reflexive">
+		<meta property="og:title" content="🗃️ Reflexive">
+		<meta property="og:description" content="Papa Vault - 🗃️ Reflexive">
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="zettlekasten/🗃️-reflexive.html">
+		<meta property="og:image" content="undefined">
+		<meta property="og:site_name" content="Papa Vault">
+		<link rel="alternate" type="application/rss+xml" title="RSS Feed" href="lib/rss.xml"><script async="" id="webpage-script" src="lib/scripts/webpage.js" onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script><script type="module" async="" id="graph-view-script" src="lib/scripts/graph-view.js"></script><script async="" id="graph-wasm-script" src="lib/scripts/graph-wasm.js" onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script><script async="" id="graph-render-worker-script" src="lib/scripts/graph-render-worker.js" onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script><script async="" id="tinycolor-script" src="lib/scripts/tinycolor.js" onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script><script async="" id="pixi-script" src="lib/scripts/pixi.js" onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script><script async="" id="minisearch-script" src="lib/scripts/minisearch.js" onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script><link rel="icon" href="lib/media/favicon.png"><script async="" id="graph-data-script" src="lib/scripts/graph-data.js" onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script><style>body{--line-width:40em;--line-width-adaptive:40em;--file-line-width:40em;--sidebar-width:min(20em, 80vw);--collapse-arrow-size:11px;--tree-horizontal-spacing:0.6em;--tree-vertical-spacing:0.6em;--sidebar-margin:12px}.sidebar{height:100%;min-width:calc(var(--sidebar-width) + var(--divider-width-hover));max-width:calc(var(--sidebar-width) + var(--divider-width-hover));font-size:14px;z-index:10;position:relative;overflow:hidden;transition:min-width ease-in-out,max-width ease-in-out;transition-duration:.2s;contain:size}.sidebar-left{left:0}.sidebar-right{right:0}.sidebar.is-collapsed{min-width:0;max-width:0}body.floating-sidebars .sidebar{position:absolute}.sidebar-content{height:100%;min-width:calc(var(--sidebar-width) - var(--divider-width-hover));top:0;padding:var(--sidebar-margin);padding-top:4em;line-height:var(--line-height-tight);background-color:var(--background-secondary);transition:background-color,border-right,border-left,box-shadow;transition-duration:var(--color-fade-speed);transition-timing-function:ease-in-out;position:absolute;display:flex;flex-direction:column}.sidebar:not(.is-collapsed) .sidebar-content{min-width:calc(max(100%,var(--sidebar-width)) - 3px);max-width:calc(max(100%,var(--sidebar-width)) - 3px)}.sidebar-left .sidebar-content{left:0;border-top-right-radius:var(--radius-l);border-bottom-right-radius:var(--radius-l)}.sidebar-right .sidebar-content{right:0;border-top-left-radius:var(--radius-l);border-bottom-left-radius:var(--radius-l)}.sidebar:has(.sidebar-content:empty):has(.topbar-content:empty){display:none}.sidebar-topbar{height:2em;width:var(--sidebar-width);top:var(--sidebar-margin);padding-inline:var(--sidebar-margin);z-index:1;position:fixed;display:flex;align-items:center;transition:width ease-in-out;transition-duration:inherit}.sidebar.is-collapsed .sidebar-topbar{width:calc(2.3em + var(--sidebar-margin) * 2)}.sidebar .sidebar-topbar.is-collapsed{width:0}.sidebar-left .sidebar-topbar{left:0}.sidebar-right .sidebar-topbar{right:0}.topbar-content{overflow:hidden;overflow:clip;width:100%;height:100%;display:flex;align-items:center;transition:inherit}.sidebar.is-collapsed .topbar-content{width:0;transition:inherit}.clickable-icon.sidebar-collapse-icon{background-color:transparent;color:var(--icon-color-focused);padding:0!important;margin:0!important;height:100%!important;width:2.3em!important;margin-inline:0.14em!important;position:absolute}.sidebar-left .clickable-icon.sidebar-collapse-icon{transform:rotateY(180deg);right:var(--sidebar-margin)}.sidebar-right .clickable-icon.sidebar-collapse-icon{transform:rotateY(180deg);left:var(--sidebar-margin)}.clickable-icon.sidebar-collapse-icon svg.svg-icon{width:100%;height:100%}.sidebar-section-header{margin:0 0 1em 0;text-transform:uppercase;letter-spacing:.06em;font-weight:600}body{transition:background-color var(--color-fade-speed) ease-in-out}.webpage-container{display:flex;flex-direction:row;height:100%;width:100%;align-items:stretch;justify-content:center}.document-container{opacity:1;flex-basis:100%;max-width:100%;width:100%;height:100%;display:flex;flex-direction:column;align-items:center;transition:opacity .2s ease-in-out;contain:inline-size}.hide{opacity:0;transition:opacity .2s ease-in-out}.document-container>.markdown-preview-view{margin:var(--sidebar-margin);margin-bottom:0;width:100%;width:-webkit-fill-available;width:-moz-available;width:fill-available;background-color:var(--background-primary);transition:background-color var(--color-fade-speed) ease-in-out;border-top-right-radius:var(--window-radius,var(--radius-m));border-top-left-radius:var(--window-radius,var(--radius-m));overflow-x:hidden!important;overflow-y:auto!important;display:flex!important;flex-direction:column!important;align-items:center!important;contain:inline-size}.document-container>.markdown-preview-view>.markdown-preview-sizer{padding-bottom:80vh!important;width:100%!important;max-width:var(--line-width)!important;flex-basis:var(--line-width)!important;transition:background-color var(--color-fade-speed) ease-in-out;contain:inline-size}.markdown-rendered img:not([width]),.view-content img:not([width]){max-width:100%;outline:0}.document-container>.view-content.embed{display:flex;padding:1em;height:100%;width:100%;align-items:center;justify-content:center}.document-container>.view-content.embed>*{max-width:100%;max-height:100%;object-fit:contain}:has(> :is(.math,table)){overflow-x:auto!important}.document-container>.view-content{overflow-x:auto;contain:content;padding:0;margin:0;height:100%}.scroll-highlight{position:absolute;width:100%;height:100%;pointer-events:none;z-index:1000;background-color:hsla(var(--color-accent-hsl),.25);opacity:0;padding:1em;inset:50%;translate:-50% -50%;border-radius:var(--radius-s)}</style><script defer="">async function loadIncludes(){if("file:"!=location.protocol){let e=document.querySelectorAll("include");for(let t=0;t<e.length;t++){let o=e[t],l=o.getAttribute("src");try{const e=await fetch(l);if(!e.ok){console.log("Could not include file: "+l),o?.remove();continue}let t=await e.text(),n=document.createRange().createContextualFragment(t),i=Array.from(n.children);for(let e of i)e.classList.add("hide"),e.style.transition="opacity 0.5s ease-in-out",setTimeout((()=>{e.classList.remove("hide")}),10);o.before(n),o.remove(),console.log("Included file: "+l)}catch(e){o?.remove(),console.log("Could not include file: "+l,e);continue}}}else{if(document.querySelectorAll("include").length>0){var e=document.createElement("div");e.id="error",e.textContent="Web server exports must be hosted on an http / web server to be viewed correctly.",e.style.position="fixed",e.style.top="50%",e.style.left="50%",e.style.transform="translate(-50%, -50%)",e.style.fontSize="1.5em",e.style.fontWeight="bold",e.style.textAlign="center",document.body.appendChild(e),document.querySelector(".document-container")?.classList.remove("hide")}}}document.addEventListener("DOMContentLoaded",(()=>{loadIncludes()}));let isFileProtocol="file:"==location.protocol;function waitLoadScripts(e,t){let o=e.map((e=>document.getElementById(e+"-script"))),l=0;!function e(){let n=o[l];l++,n&&"true"!=n.getAttribute("loaded")||l<o.length&&e(),l<o.length?n.addEventListener("load",e):t()}()}</script><link rel="stylesheet" href="lib/styles/obsidian.css"><link rel="preload" href="lib/styles/other-plugins.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="lib/styles/other-plugins.css"></noscript><link rel="stylesheet" href="lib/styles/theme.css"><link rel="preload" href="lib/styles/global-variable-styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="lib/styles/global-variable-styles.css"></noscript><link rel="preload" href="lib/styles/main-styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="lib/styles/main-styles.css"></noscript><link rel="preload" href="lib/styles/snippets.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="lib/styles/snippets.css"></noscript></head><body class="publish css-settings-manager theme-dark show-inline-title show-ribbon highlightr-text-color"><script defer="">let theme=localStorage.getItem("theme")||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");"dark"==theme?(document.body.classList.add("theme-dark"),document.body.classList.remove("theme-light")):(document.body.classList.add("theme-light"),document.body.classList.remove("theme-dark")),window.innerWidth<480?document.body.classList.add("is-phone"):window.innerWidth<768?document.body.classList.add("is-tablet"):window.innerWidth<1024?document.body.classList.add("is-small-screen"):document.body.classList.add("is-large-screen")</script><div class="webpage-container workspace"><div class="sidebar-left sidebar"><div class="sidebar-handle"></div><div class="sidebar-topbar"><div class="topbar-content"><label class="theme-toggle-container" for="theme_toggle"><input class="theme-toggle-input" type="checkbox" id="theme_toggle"><div class="toggle-background"></div></label></div><div class="clickable-icon sidebar-collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="svg-icon"><path d="M21 3H3C1.89543 3 1 3.89543 1 5V19C1 20.1046 1.89543 21 3 21H21C22.1046 21 23 20.1046 23 19V5C23 3.89543 22.1046 3 21 3Z"></path><path d="M10 4V20"></path><path d="M4 7H7"></path><path d="M4 10H7"></path><path d="M4 13H7"></path></svg></div></div><div class="sidebar-content"><div class="search-input-container"><input enterkeyhint="search" type="search" spellcheck="false" placeholder="Search..."><div class="search-input-clear-button" aria-label="Clear search"></div></div><include src="lib/html/file-tree.html"></include></div><script defer="">let ls = document.querySelector(".sidebar-left"); ls.classList.add("is-collapsed"); if (window.innerWidth > 768) ls.classList.remove("is-collapsed"); ls.style.setProperty("--sidebar-width", localStorage.getItem("sidebar-left-width"));</script></div><div class="document-container markdown-reading-view hide"><div class="markdown-preview-view markdown-rendered allow-fold-headings allow-fold-lists is-readable-line-width"><style id="MJX-CHTML-styles"></style><div class="markdown-preview-sizer markdown-preview-section"><h1 class="page-title heading inline-title" id="jmd."><p dir="auto">jmd.</p></h1><div class="el-h1 heading-wrapper"><div class="heading-children"><div class="el-table" dir="auto" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="auto"></th>
+<th dir="ltr">What it stands for</th>
+<th dir="ltr">English equivalent</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="ltr">jmd.</td>
+<td dir="ltr">jemand</td>
+<td dir="ltr">Someone (nominative)</td>
+</tr>
+<tr>
+<td dir="ltr">jmdn.</td>
+<td dir="ltr">jemanden</td>
+<td dir="ltr">Someone (accusative)</td>
+</tr>
+<tr>
+<td dir="ltr">jmdm.</td>
+<td dir="ltr">jemandem</td>
+<td dir="ltr">Someone (dative)</td>
+</tr>
+<tr>
+<td dir="ltr">jmds.</td>
+<td dir="ltr">jemandes</td>
+<td dir="ltr">Someone's (possessive)</td>
+</tr>
+</tbody>
+</table></div><div class="el-hr"><hr></div></div></div><div class="el-h1 heading-wrapper"><h1 data-heading="Pronomen im Possessiv, Dativ und Akkusativ" dir="auto" class="heading" id="Pronomen_im_Possessiv,_Dativ_und_Akkusativ">Pronomen im Possessiv, Dativ und Akkusativ</h1><div class="heading-children"><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">Nominative</th>
+<th dir="ltr">Possessive</th>
+<th dir="ltr">Akkusative</th>
+<th dir="ltr">Dative</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="ltr">Ich</td>
+<td dir="ltr">mein</td>
+<td dir="ltr">mich</td>
+<td dir="ltr">mir</td>
+</tr>
+<tr>
+<td dir="ltr">du</td>
+<td dir="ltr">dein</td>
+<td dir="ltr">dich</td>
+<td dir="ltr">dir</td>
+</tr>
+<tr>
+<td dir="ltr">er</td>
+<td dir="ltr"><span class="ftc-color-builtin-blue">sein</span></td>
+<td dir="ltr"><span class="ftc-color-builtin-red">ihn</span></td>
+<td dir="ltr"><span class="ftc-color-builtin-blue">ihm</span></td>
+</tr>
+<tr>
+<td dir="ltr">es</td>
+<td dir="ltr"><span class="ftc-color-builtin-blue">sein</span></td>
+<td dir="ltr">es</td>
+<td dir="ltr"><span class="ftc-color-builtin-blue">ihm</span></td>
+</tr>
+<tr>
+<td dir="ltr">sie</td>
+<td dir="ltr"><span class="ftc-color-builtin-purple">ihr</span></td>
+<td dir="ltr">sie</td>
+<td dir="ltr"><span class="ftc-color-builtin-purple">ihr</span></td>
+</tr>
+<tr>
+<td dir="ltr">wir</td>
+<td dir="ltr">unser</td>
+<td dir="ltr">uns</td>
+<td dir="ltr">uns</td>
+</tr>
+<tr>
+<td dir="ltr">ihr</td>
+<td dir="ltr">euer</td>
+<td dir="ltr">euch</td>
+<td dir="ltr">euch</td>
+</tr>
+<tr>
+<td dir="ltr">sie</td>
+<td dir="ltr"><span class="ftc-color-builtin-purple">ihr</span></td>
+<td dir="ltr">sie</td>
+<td dir="ltr"><span class="ftc-color-builtin-pink">ihnen</span></td>
+</tr>
+<tr>
+<td dir="ltr">Sie</td>
+<td dir="ltr"><span class="ftc-color-builtin-purple">Ihr</span></td>
+<td dir="ltr">Sie</td>
+<td dir="ltr"><span class="ftc-color-builtin-pink">Ihnen</span></td>
+</tr>
+</tbody>
+</table></div><div class="el-hr"><hr></div></div></div><div class="el-h1 heading-wrapper"><h1 data-heading="Akkusativ" dir="auto" class="heading" id="Akkusativ">Akkusativ</h1><div class="heading-children"><div class="el-p"><p dir="auto">In response to "was?" <mark class="hltr-beispiel">(what?)</mark>/"wen?" <mark class="hltr-beispiel">(whom?)</mark></p></div></div></div><div class="el-h1 heading-wrapper"><h1 data-heading="Akkusativartikel" dir="auto" class="heading" id="Akkusativartikel">Akkusativartikel</h1><div class="heading-children"><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">Maskulin</th>
+<th dir="ltr">Feminin</th>
+<th dir="ltr">Neutral</th>
+<th dir="ltr">Plural</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="ltr"><span class="ftc-color-builtin-red">den</span></td>
+<td dir="ltr">die</td>
+<td dir="ltr">das</td>
+<td dir="ltr">die</td>
+</tr>
+<tr>
+<td dir="ltr"><span class="ftc-color-builtin-red">einen</span></td>
+<td dir="ltr">eine</td>
+<td dir="ltr">ein</td>
+<td dir="auto">-</td>
+</tr>
+</tbody>
+</table></div><div class="el-h2 heading-wrapper"><h2 data-heading="Letzt- , ganz-" dir="auto" class="heading" id="Letzt-_,_ganz-"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Letzt- , ganz-</h2><div class="heading-children"><div class="el-ul"><ul>
+<li data-line="0" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>✏️ <mark class="hltr-akk">Letzt-</mark> (<b style="color:rgb(0, 136, 255)">-en</b>, <b style="color:rgb(3, 209, 0)">-es,</b> <b style="color:rgb(249, 44, 245)">-e</b>)
+<ul>
+<li data-line="1" dir="auto"><mark class="hltr-beispiel">Letzten Monat</mark></li>
+<li data-line="2" dir="auto"><mark class="hltr-beispiel">Letztes Jahr</mark></li>
+<li data-line="3" dir="auto"><mark class="hltr-beispiel">Letzte Mittwoch</mark></li>
+</ul>
+</li>
+<li data-line="4" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>✏️<em>Artikel</em><sup>Akk</sup> + <mark class="hltr-akk">ganz-</mark> (<b style="color:rgb(0, 136, 255)">-en</b>, <b style="color:rgb(3, 209, 0)">-es,</b> <b style="color:rgb(249, 44, 245)">-e</b>)
+<ul>
+<li data-line="5" dir="auto"><mark class="hltr-beispiel">den ganzen Tag</mark></li>
+<li data-line="6" dir="auto"><mark class="hltr-beispiel">das ganze Jahr</mark></li>
+<li data-line="7" dir="auto"><mark class="hltr-beispiel">die ganze Woche</mark></li>
+</ul>
+</li>
+</ul></div></div></div><div class="el-h2 heading-wrapper"><h2 data-heading="Präpositionen" dir="auto" class="heading" id="Präpositionen"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Präpositionen</h2><div class="heading-children"><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">Präposition</th>
+<th dir="ltr">Bedeutung</th>
+<th dir="ltr">Beispiel</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="ltr"><strong><span class="ftc-color-builtin-red">durch</span></strong></td>
+<td dir="ltr">through</td>
+<td dir="auto"></td>
+</tr>
+<tr>
+<td dir="ltr"><strong><span class="ftc-color-builtin-red">für</span></strong></td>
+<td dir="ltr">for</td>
+<td dir="auto"></td>
+</tr>
+<tr>
+<td dir="ltr"><strong><span class="ftc-color-builtin-red">gegen</span></strong></td>
+<td dir="ltr">against, toward</td>
+<td dir="auto"></td>
+</tr>
+<tr>
+<td dir="ltr"><strong><span class="ftc-color-builtin-red">ohne</span></strong></td>
+<td dir="ltr">Without</td>
+<td dir="auto"></td>
+</tr>
+<tr>
+<td dir="ltr"><strong><span class="ftc-color-builtin-red">um</span></strong></td>
+<td dir="ltr">around, at (time)</td>
+<td dir="auto"></td>
+</tr>
+<tr>
+<td dir="ltr"><strong><span class="ftc-color-builtin-red">bis</span></strong></td>
+<td dir="ltr">until, up to</td>
+<td dir="auto"></td>
+</tr>
+<tr>
+<td dir="ltr"><strong><span class="ftc-color-builtin-red">entlang</span></strong></td>
+<td dir="ltr">along (after noun!)</td>
+<td dir="auto"></td>
+</tr>
+</tbody>
+</table></div><div class="el-h3 heading-wrapper"><h3 data-heading="Mnemonic" dir="auto" class="heading" id="Mnemonic"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Mnemonic</h3><div class="heading-children"><div class="el-div"><div data-callout-metadata="" data-callout-fold="" data-callout="hint" class="callout drop-shadow"><div class="callout-title" dir="auto"><div class="callout-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-flame"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"></path></svg></div><div class="callout-title-inner">Hint</div></div><div class="callout-content">
+<p dir="auto"><b style="color:rgb(253, 68, 68)"> “DOGFU-BE”</b></p>
+</div></div></div><div class="el-hr"><hr></div><div class="el-hr"><hr></div></div></div></div></div></div></div><div class="el-h1 heading-wrapper"><h1 data-heading="<b style=&quot;color:rgb(1, 203, 254)&quot;>Dative</b>" dir="auto" class="heading" id="<b_style=&quot;color:rgb(1,_203,_254)&quot;>Dative</b>"><b style="color:rgb(1, 203, 254)">Dative</b></h1><div class="heading-children"></div></div><div class="el-h1 heading-wrapper"><h1 data-heading="Dativartikel" dir="auto" class="heading" id="Dativartikel">Dativartikel</h1><div class="heading-children"><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">Maskulin</th>
+<th dir="ltr">Feminin</th>
+<th dir="ltr">Neutral</th>
+<th dir="ltr">Plural</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="ltr"><b style="color:rgb(0, 176, 240)">dem</b></td>
+<td dir="ltr"><b style="color:rgb(249, 44, 245)">der</b></td>
+<td dir="ltr"><b style="color:rgb(0, 176, 240)">dem</b></td>
+<td dir="ltr"><b style="color:rgb(247, 131, 6)">den</b></td>
+</tr>
+<tr>
+<td dir="ltr"><b style="color:rgb(0, 176, 240)">einem</b></td>
+<td dir="ltr"><b style="color:rgb(249, 44, 245)">einer</b></td>
+<td dir="ltr"><b style="color:rgb(0, 176, 240)">einem</b></td>
+<td dir="auto">-</td>
+</tr>
+</tbody>
+</table></div><div class="el-ul"><ul>
+<li data-line="0" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>✏️ in dative <b style="color:rgb(247, 131, 6)">Plural</b> nouns usually get an <strong><code>-n</code></strong> suffix — <em>unless</em> they already end in <strong><code>-n</code></strong> or <strong><code>-s</code></strong>.
+<ul>
+<li data-line="1" dir="auto"><mark style="color:#888888ff">Ich spreche mit den Kindern</mark></li>
+<li data-line="2" dir="auto"><mark style="color:#888888ff">Wir gehen mit den Autos</mark></li>
+</ul>
+</li>
+</ul></div><div class="el-h2 heading-wrapper"><h2 data-heading="Präpositionen" dir="auto" class="heading" id="Präpositionen"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Präpositionen</h2><div class="heading-children"><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">Präposition</th>
+<th dir="ltr">Bedeutung</th>
+<th dir="ltr">Beispiel</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="ltr"><b style="color:rgb(0, 176, 240)">aus</b></td>
+<td dir="ltr">out of, from</td>
+<td dir="ltr">Ich komme <strong>aus dem</strong> Haus</td>
+</tr>
+<tr>
+<td dir="ltr"><b style="color:rgb(0, 176, 240)">außer</b></td>
+<td dir="ltr">except besides</td>
+<td dir="auto"></td>
+</tr>
+<tr>
+<td dir="ltr"><b style="color:rgb(0, 176, 240)">bei</b></td>
+<td dir="ltr">at, near, with</td>
+<td dir="ltr">Sie arbeitet <strong>bei der Firma</strong></td>
+</tr>
+<tr>
+<td dir="ltr"><b style="color:rgb(0, 176, 240)">mit</b></td>
+<td dir="ltr">with</td>
+<td dir="ltr">Ich fahre <strong>mit dem</strong> Auto</td>
+</tr>
+<tr>
+<td dir="ltr"><b style="color:rgb(0, 176, 240)">seit</b></td>
+<td dir="ltr">since, for (time duration)</td>
+<td dir="auto"></td>
+</tr>
+<tr>
+<td dir="ltr"><b style="color:rgb(0, 176, 240)">nach</b></td>
+<td dir="ltr">after, to (a place)</td>
+<td dir="auto"></td>
+</tr>
+<tr>
+<td dir="ltr"><b style="color:rgb(0, 176, 240)">von</b></td>
+<td dir="ltr">from, of</td>
+<td dir="auto"></td>
+</tr>
+<tr>
+<td dir="ltr"><b style="color:rgb(0, 176, 240)">zu</b></td>
+<td dir="ltr">to (a person or place)</td>
+<td dir="ltr">Ich gehe <strong>zu der Schule</strong></td>
+</tr>
+<tr>
+<td dir="ltr"><b style="color:rgb(0, 176, 240)">gegenüber</b></td>
+<td dir="ltr">opposite, across from (often placed after the noun)</td>
+<td dir="auto"></td>
+</tr>
+<tr>
+<td dir="ltr"><b style="color:rgb(0, 176, 240)">ab</b></td>
+<td dir="ltr">starting from a certain point in time or place</td>
+<td dir="ltr">Ab nächster Woche beginnt der Kurs</td>
+</tr>
+</tbody>
+</table></div><div class="el-h3 heading-wrapper"><h3 data-heading="Mnemonic" dir="auto" class="heading" id="Mnemonic"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Mnemonic</h3><div class="heading-children"><div class="el-div"><div data-callout-metadata="" data-callout-fold="" data-callout="hint" class="callout drop-shadow"><div class="callout-title" dir="auto"><div class="callout-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-flame"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"></path></svg></div><div class="callout-title-inner">♬<strong>Dativwalzer</strong>!♬</div></div><div class="callout-content">
+<p dir="auto"><b style="color:rgb(0, 176, 240)">Aus, außer, bei, mit,</b> ♬♬ <b style="color:rgb(0, 176, 240)">seit, nach,</b> ♬♬ <b style="color:rgb(0, 176, 240)">von, zu</b> – Dativ gehört immer dazu! <a data-tooltip-position="top" aria-label="https://youtu.be/L_EWNRkvkZY?si=vtJWaBxpvaSWN54T&amp;t=540" rel="noopener nofollow" class="external-link" href="https://youtu.be/L_EWNRkvkZY?si=vtJWaBxpvaSWN54T&amp;t=540" target="_blank">▶️</a>"<br>
+<span style="color:rgb(136, 136, 136)"> (Translation: "Aus, außer, bei, mit, nach, seit, von, zu – Dative always comes with you!")</span><br>
+Though ab and gegenüber are missing from the song</p>
+</div></div></div></div></div></div></div><div class="el-h2 heading-wrapper"><h2 data-heading="Dativ-Ergänzung" dir="auto" class="heading" id="Dativ-Ergänzung"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Dativ-Ergänzung</h2><div class="heading-children"><div class="el-p"><p dir="auto">✅ Many dative verbs involve <em><span class="ftc-color-builtin-blue">giving, receiving, belonging, or emotions</span></em> (e.g., helfen, danken, gefallen).</p></div><div class="el-p"><p dir="auto">❓ Who gets Dativ form?<br>
+❗<strong>Recipient</strong><br>
+📌<strong>jd.<sup>Nom</sup> + Verb + </strong>jdm.**<sup>Dat</sup></p></div><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">Verb</th>
+<th dir="ltr"><mark class="hltr-beispiel">Bedeutung</mark></th>
+<th dir="ltr">Dative = recipient</th>
+<th dir="ltr"><mark class="hltr-beispiel">Beispiel</mark></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="ltr"><strong>Helfen</strong></td>
+<td dir="ltr"><mark class="hltr-beispiel">to help</mark></td>
+<td dir="ltr">the one receiving help</td>
+<td dir="ltr"><span class="ftc-color-builtin-Grey">Ich helfe dir.<em>(I help you.)</em></span></td>
+</tr>
+<tr>
+<td dir="ltr"><strong>Danken</strong></td>
+<td dir="ltr"><mark class="hltr-beispiel">to thank</mark></td>
+<td dir="ltr">the one being thanked</td>
+<td dir="ltr"><span class="ftc-color-builtin-Grey">Ich danke dir für deine Hilfe.<em>(I thank you for your help.)</em></span></td>
+</tr>
+<tr>
+<td dir="ltr"><strong>Folgen</strong></td>
+<td dir="ltr"><mark class="hltr-beispiel">to follow</mark></td>
+<td dir="ltr">the one being followed</td>
+<td dir="ltr"><span class="ftc-color-builtin-Grey">Der Hund folgt mir überall.<em>(The dog follows me everywhere.)</em></span></td>
+</tr>
+<tr>
+<td dir="ltr"><strong>Schaden</strong></td>
+<td dir="ltr"><mark class="hltr-beispiel">to harm</mark></td>
+<td dir="ltr">the thing being harmed</td>
+<td dir="ltr"><span class="ftc-color-builtin-Grey">Rauchen schadet der Gesundheit.<em>(Smoking harms your health.)</em></span></td>
+</tr>
+<tr>
+<td dir="ltr"><strong>Antworten</strong></td>
+<td dir="ltr"><mark class="hltr-beispiel">to answer</mark></td>
+<td dir="ltr">the one getting an answer</td>
+<td dir="ltr"><span class="ftc-color-builtin-Grey">Ich antworte dem Professor <em>(I answer to the professor)</em></span></td>
+</tr>
+<tr>
+<td dir="ltr"><strong>Vertrauen</strong></td>
+<td dir="ltr"><mark class="hltr-beispiel">to trust</mark></td>
+<td dir="ltr">the one being trusted</td>
+<td dir="ltr"><span class="ftc-color-builtin-Grey">Mein Mann vertraut mir <em>(My husband trusts me.)</em></span></td>
+</tr>
+</tbody>
+</table></div><div class="el-p"><p dir="auto">❓ Who gets Dativ form?<br>
+❗<b style="color:rgb(0, 176, 240)">The Affected person</b><br>
+📌<strong>etwas<sup>Nom</sup> + Verb + jdm.</strong><sup>Dat</sup></p></div><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">Verben</th>
+<th dir="ltr"><mark class="hltr-beispiel">Bedeutung</mark></th>
+<th dir="ltr">Dative=affected person</th>
+<th dir="ltr"><mark class="hltr-beispiel">Beispiel</mark></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="ltr"><span class="ftc-color-builtin-cyan">Gefallen</span></td>
+<td dir="ltr"><mark class="hltr-beispiel">to please, be liked by</mark></td>
+<td dir="ltr">the person who likes it</td>
+<td dir="ltr"><span class="ftc-color-builtin-Grey">Das Buch gefällt mir.(I like the book.)</span></td>
+</tr>
+<tr>
+<td dir="ltr"><span class="ftc-color-builtin-cyan">Gehören</span></td>
+<td dir="ltr"><mark class="hltr-beispiel">to belong to</mark></td>
+<td dir="ltr">the owner</td>
+<td dir="ltr"><span class="ftc-color-builtin-Grey">Dieses Buch gehört mir.<em>(This book belongs to me.)</em></span></td>
+</tr>
+<tr>
+<td dir="ltr"><span class="ftc-color-builtin-cyan">Fehlen</span></td>
+<td dir="ltr"><mark class="hltr-beispiel">to miss, to lack</mark></td>
+<td dir="ltr">the one missing the other<br></td>
+<td dir="ltr">Du fehlst mir. <em>(literally: You are missing to me!)</em></td>
+</tr>
+<tr>
+<td dir="ltr"><span class="ftc-color-builtin-cyan">Pass</span></td>
+<td dir="ltr"><mark class="hltr-beispiel">to fit, suit</mark></td>
+<td dir="ltr">the wearer</td>
+<td dir="ltr"><span class="ftc-color-builtin-Grey">Das Hemd passt mir nicht.<em>(The shirt doesn’t fit me.)</em></span></td>
+</tr>
+<tr>
+<td dir="ltr"><span class="ftc-color-builtin-cyan">Stehen (style-wise)</span></td>
+<td dir="ltr"><mark class="hltr-beispiel">to look good on someone</mark></td>
+<td dir="ltr">the wearer</td>
+<td dir="ltr"><span class="ftc-color-builtin-Grey">Die Jacke steht <strong>ihm</strong> gut. <em>(The jacket suits him well.)</em></span></td>
+</tr>
+<tr>
+<td dir="ltr"><span class="ftc-color-builtin-cyan">Schmecken</span></td>
+<td dir="ltr"><mark class="hltr-beispiel">to taste good</mark></td>
+<td dir="ltr">the taster</td>
+<td dir="ltr"><span class="ftc-color-builtin-Grey">Die Suppe schmeckt mir. <em>(The soup tastes good to me.)</em></span></td>
+</tr>
+<tr>
+<td dir="ltr"><span class="ftc-color-builtin-cyan">Wehtun</span></td>
+<td dir="ltr"><mark class="hltr-beispiel">to be hurt, to feel pain</mark></td>
+<td dir="ltr">the one feeling pain</td>
+<td dir="ltr"><span class="ftc-color-builtin-Grey">Der Kopf tut <strong>mir</strong> weh (<em>my head hurts)</em></span></td>
+</tr>
+</tbody>
+</table></div><div class="el-hr"><hr></div><div class="el-hr"><hr></div></div></div><div class="el-h2 heading-wrapper"><h2 data-heading="<b style=&quot;color:rgb(153, 102, 255)&quot;>Wechselpräpositionen</b>" dir="auto" class="heading" id="<b_style=&quot;color:rgb(153,_102,_255)&quot;>Wechselpräpositionen</b>"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><b style="color:rgb(153, 102, 255)">Wechselpräpositionen</b></h2><div class="heading-children"><div class="el-p"><p dir="auto">These 9 prepositions sometimes require the Dative and sometimes the Accusative, depending on whether the action is <mark class="hltr-dativ">static (Dative)</mark> or shows <mark class="hltr-akk">movement/direction (Accusative)</mark>.</p></div><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr"><strong>Preposition</strong></th>
+<th dir="ltr"><strong>Bedeutung</strong></th>
+<th dir="ltr"><b style="color:rgb(0, 176, 240)">Dative (Wo? - Where? / No movement)</b></th>
+<th dir="ltr"><b style="color:rgb(253, 68, 68)">Accusative (Wohin? - Where to? / Movement)</b></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="ltr"><span class="ftc-color-builtin-purple"><strong>an</strong></span></td>
+<td dir="ltr">at, on</td>
+<td dir="ltr">Er steht an der Tür.<span class="ftc-color-builtin-Grey"> (He stands at the door)</span></td>
+<td dir="ltr">Er geht an die Tür. <span class="ftc-color-builtin-Grey">(He walks to the door.)</span></td>
+</tr>
+<tr>
+<td dir="ltr"><span class="ftc-color-builtin-purple"><strong>auf</strong></span></td>
+<td dir="ltr">on, onto</td>
+<td dir="ltr">Das Buch liegt auf dem Tisch.<span class="ftc-color-builtin-Grey"> (The book lies on the table.)</span></td>
+<td dir="ltr">Ich lege das Buch auf den Tisch.<span class="ftc-color-builtin-Grey"> (I put the book onto the table.)</span></td>
+</tr>
+<tr>
+<td dir="ltr"><span class="ftc-color-builtin-purple"><strong>hinter</strong></span></td>
+<td dir="ltr">behind</td>
+<td dir="ltr">Das Auto steht hinter dem Haus.<span class="ftc-color-builtin-Grey"> (The car is behind the house.)</span></td>
+<td dir="ltr">Er fährt das Auto hinter das Haus. <span class="ftc-color-builtin-Grey">(He drives the car behind the house.)</span></td>
+</tr>
+<tr>
+<td dir="ltr"><span class="ftc-color-builtin-purple"><strong>in</strong></span></td>
+<td dir="ltr">in, into</td>
+<td dir="ltr">Er ist in der Schule. <span class="ftc-color-builtin-Grey">(He is in the school.)</span></td>
+<td dir="ltr">Er geht in die Schule.<span class="ftc-color-builtin-Grey"> (He goes into the school.)</span></td>
+</tr>
+<tr>
+<td dir="ltr"><span class="ftc-color-builtin-purple"><strong>neben</strong></span></td>
+<td dir="ltr">next to</td>
+<td dir="ltr">Das Sofa steht neben dem Tisch. <span class="ftc-color-builtin-Grey">(The sofa is next to the table.)</span></td>
+<td dir="ltr">Ich stelle das Sofa neben den Tisch. <span class="ftc-color-builtin-Grey">(I place the sofa next to the table.)</span></td>
+</tr>
+<tr>
+<td dir="ltr"><span class="ftc-color-builtin-purple"><strong>über</strong></span></td>
+<td dir="ltr">above, over</td>
+<td dir="ltr">Die Lampe hängt über dem Tisch. <span class="ftc-color-builtin-Grey">(The lamp hangs above the table.)</span></td>
+<td dir="ltr">Er hängt die Lampe über den Tisch. <span class="ftc-color-builtin-Grey">(He hangs the lamp over the table.)</span></td>
+</tr>
+<tr>
+<td dir="ltr"><span class="ftc-color-builtin-purple"><strong>unter</strong></span></td>
+<td dir="ltr">under, below</td>
+<td dir="ltr">Die Katze schläft unter dem Bett. <span class="ftc-color-builtin-Grey">(The cat sleeps under the bed.)</span></td>
+<td dir="ltr">Die Katze läuft unter das Bett. <span class="ftc-color-builtin-Grey">(The cat runs under the bed.)</span></td>
+</tr>
+<tr>
+<td dir="ltr"><span class="ftc-color-builtin-purple"><strong>vor</strong></span></td>
+<td dir="ltr">in front of</td>
+<td dir="ltr">Er steht vor dem Haus. <span class="ftc-color-builtin-Grey">(He stands in front of the house.)</span></td>
+<td dir="ltr">Er geht vor das Haus.<span class="ftc-color-builtin-Grey"> (He walks in front of the house.)</span></td>
+</tr>
+<tr>
+<td dir="ltr"><span class="ftc-color-builtin-purple"><strong>zwischen</strong></span></td>
+<td dir="ltr">between</td>
+<td dir="ltr">Der Stuhl steht zwischen den Tischen. <span class="ftc-color-builtin-Grey">(The chair is between the tables.)</span></td>
+<td dir="ltr">Ich stelle den Stuhl zwischen die Tische. <span class="ftc-color-builtin-Grey">(I place the chair between the tables.)</span></td>
+</tr>
+</tbody>
+</table></div><div class="el-hr"><hr></div><div class="el-h3 heading-wrapper"><h3 data-heading="🧨Caution" dir="auto" class="heading" id="🧨Caution"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>🧨Caution</h3><div class="heading-children"><div class="el-ul"><ul>
+<li data-line="0" dir="auto">The following Prepositions are actually Dative making prepositions but they work with <strong>Wohin/Woher?</strong> (Direction).</li>
+</ul></div><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">Preposition</th>
+<th dir="ltr">Meaning</th>
+<th dir="ltr">Example with <em>Wohin?</em></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="ltr"><strong><span class="ftc-color-builtin-blue">zu</span></strong></td>
+<td dir="ltr">to (people/places)</td>
+<td dir="ltr"><span class="ftc-color-builtin-Grey">Wohin gehst du? → Ich gehe <strong>zur Ärztin</strong>.</span></td>
+</tr>
+<tr>
+<td dir="ltr"><strong><span class="ftc-color-builtin-blue">nach</span></strong></td>
+<td dir="ltr">to (cities, countries, home)</td>
+<td dir="ltr"><span class="ftc-color-builtin-Grey">Wohin fährst du? → Ich fahre <strong>nach Paris</strong>.</span></td>
+</tr>
+<tr>
+<td dir="ltr"><strong><span class="ftc-color-builtin-blue">von</span></strong></td>
+<td dir="ltr">from (origin)</td>
+<td dir="ltr"><span class="ftc-color-builtin-Grey">Woher kommst du? → Ich komme <strong>von der Arbeit</strong>. <em>(implied origin)</em></span></td>
+</tr>
+<tr>
+<td dir="ltr"><strong><span class="ftc-color-builtin-blue">aus</span></strong></td>
+<td dir="ltr">out of (from inside)</td>
+<td dir="ltr"><span class="ftc-color-builtin-Grey">Woher kommt er? → Er kommt <strong>aus dem Zimmer</strong>. <em>(origin)</em></span></td>
+</tr>
+</tbody>
+</table></div><div class="el-hr"><hr></div></div></div></div></div></div></div><div class="el-h1 heading-wrapper"><h1 data-heading="Genitiv-S" dir="auto" class="heading" id="Genitiv-S">Genitiv-S</h1><div class="heading-children"><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">Maskulin</th>
+<th dir="ltr">Feminin</th>
+<th dir="ltr">Neutral</th>
+<th dir="ltr">Plural</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="ltr"><b style="color:rgb(3, 209, 0)">des</b></td>
+<td dir="ltr"><b style="color:rgb(249, 44, 245)">der</b></td>
+<td dir="ltr"><b style="color:rgb(3, 209, 0)">des</b></td>
+<td dir="ltr"><b style="color:rgb(249, 44, 245)">der</b></td>
+</tr>
+<tr>
+<td dir="ltr"><b style="color:rgb(3, 209, 0)">eines</b></td>
+<td dir="ltr"><b style="color:rgb(249, 44, 245)">einer</b></td>
+<td dir="ltr"><b style="color:rgb(3, 209, 0)">eines</b></td>
+<td dir="auto">-</td>
+</tr>
+</tbody>
+</table></div><div class="mod-footer mod-ui"></div></div></div></div></div></div><div class="sidebar-right sidebar"><div class="sidebar-handle"></div><div class="sidebar-topbar"><div class="topbar-content"></div><div class="clickable-icon sidebar-collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="svg-icon"><path d="M21 3H3C1.89543 3 1 3.89543 1 5V19C1 20.1046 1.89543 21 3 21H21C22.1046 21 23 20.1046 23 19V5C23 3.89543 22.1046 3 21 3Z"></path><path d="M10 4V20"></path><path d="M4 7H7"></path><path d="M4 10H7"></path><path d="M4 13H7"></path></svg></div></div><div class="sidebar-content"><div class="graph-view-wrapper"><div class="sidebar-section-header">Interactive Graph</div><div class="graph-view-placeholder">
+		<div class="graph-view-container">
+			<div class="graph-icon graph-expand" role="button" aria-label="Expand" data-tooltip-position="top"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></div>
+			<canvas id="graph-canvas" class="hide" width="512px" height="512px"></canvas>
+		</div>
+		</div></div><div class="tree-container mod-root nav-folder tree-item outline-tree" data-depth="0"><div class="tree-header"><span class="sidebar-section-header">Table Of Contents</span><button class="clickable-icon collapse-tree-button" aria-label="Collapse All"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></svg></button></div><div class="tree-scroll-area tree-item-children nav-folder-children"><div class="tree-item mod-tree-folder nav-folder mod-collapsible is-collapsed" style="display: none;"></div><div class="tree-item" data-depth="1"><a class="tree-link" href="zettlekasten\🗃️-reflexive.html#jmd."><div class="tree-item-contents heading-link" heading-name="jmd."><span class="tree-item-title">jmd.</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="1"><a class="tree-link" href="zettlekasten\🗃️-reflexive.html#Pronomen_im_Possessiv,_Dativ_und_Akkusativ"><div class="tree-item-contents heading-link" heading-name="Pronomen im Possessiv, Dativ und Akkusativ"><span class="tree-item-title">Pronomen im Possessiv, Dativ und Akkusativ</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="1"><a class="tree-link" href="zettlekasten\🗃️-reflexive.html#Akkusativ"><div class="tree-item-contents heading-link" heading-name="Akkusativ"><span class="tree-item-title">Akkusativ</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="1"><a class="tree-link" href="zettlekasten\🗃️-reflexive.html#Akkusativartikel"><div class="tree-item-contents heading-link" heading-name="Akkusativartikel"><span class="tree-item-title">Akkusativartikel</span></div></a><div class="tree-item-children nav-folder-children"><div class="tree-item" data-depth="2"><a class="tree-link" href="zettlekasten\🗃️-reflexive.html#Letzt-_,_ganz-"><div class="tree-item-contents heading-link" heading-name="Letzt- , ganz-"><span class="tree-item-title">Letzt- , ganz-</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item mod-collapsible" data-depth="2"><a class="tree-link" href="zettlekasten\🗃️-reflexive.html#Präpositionen"><div class="tree-item-contents heading-link" heading-name="Präpositionen"><div class="collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><span class="tree-item-title">Präpositionen</span></div></a><div class="tree-item-children nav-folder-children"><div class="tree-item" data-depth="3"><a class="tree-link" href="zettlekasten\🗃️-reflexive.html#Mnemonic"><div class="tree-item-contents heading-link" heading-name="Mnemonic"><span class="tree-item-title">Mnemonic</span></div></a><div class="tree-item-children nav-folder-children"></div></div></div></div></div></div><div class="tree-item" data-depth="1"><a class="tree-link" href="zettlekasten\🗃️-reflexive.html#<b_style=&quot;color:rgb(1,_203,_254)&quot;>Dative</b>"><div class="tree-item-contents heading-link" heading-name="<b style=&quot;color:rgb(1, 203, 254)&quot;>Dative</b>"><span class="tree-item-title"><b style="color:rgb(1, 203, 254)">Dative</b></span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="1"><a class="tree-link" href="zettlekasten\🗃️-reflexive.html#Dativartikel"><div class="tree-item-contents heading-link" heading-name="Dativartikel"><span class="tree-item-title">Dativartikel</span></div></a><div class="tree-item-children nav-folder-children"><div class="tree-item mod-collapsible" data-depth="2"><a class="tree-link" href="zettlekasten\🗃️-reflexive.html#Präpositionen"><div class="tree-item-contents heading-link" heading-name="Präpositionen"><div class="collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><span class="tree-item-title">Präpositionen</span></div></a><div class="tree-item-children nav-folder-children"><div class="tree-item" data-depth="3"><a class="tree-link" href="zettlekasten\🗃️-reflexive.html#Mnemonic"><div class="tree-item-contents heading-link" heading-name="Mnemonic"><span class="tree-item-title">Mnemonic</span></div></a><div class="tree-item-children nav-folder-children"></div></div></div></div><div class="tree-item" data-depth="2"><a class="tree-link" href="zettlekasten\🗃️-reflexive.html#Dativ-Ergänzung"><div class="tree-item-contents heading-link" heading-name="Dativ-Ergänzung"><span class="tree-item-title">Dativ-Ergänzung</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item mod-collapsible" data-depth="2"><a class="tree-link" href="zettlekasten\🗃️-reflexive.html#<b_style=&quot;color:rgb(153,_102,_255)&quot;>Wechselpräpositionen</b>"><div class="tree-item-contents heading-link" heading-name="<b style=&quot;color:rgb(153, 102, 255)&quot;>Wechselpräpositionen</b>"><div class="collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><span class="tree-item-title"><b style="color:rgb(153, 102, 255)">Wechselpräpositionen</b></span></div></a><div class="tree-item-children nav-folder-children"><div class="tree-item" data-depth="3"><a class="tree-link" href="zettlekasten\🗃️-reflexive.html#🧨Caution"><div class="tree-item-contents heading-link" heading-name="🧨Caution"><span class="tree-item-title">🧨Caution</span></div></a><div class="tree-item-children nav-folder-children"></div></div></div></div></div></div><div class="tree-item" data-depth="1"><a class="tree-link" href="zettlekasten\🗃️-reflexive.html#Genitiv-S"><div class="tree-item-contents heading-link" heading-name="Genitiv-S"><span class="tree-item-title">Genitiv-S</span></div></a><div class="tree-item-children nav-folder-children"></div></div></div></div></div><script defer="">let rs = document.querySelector(".sidebar-right"); rs.classList.add("is-collapsed"); if (window.innerWidth > 768) rs.classList.remove("is-collapsed"); rs.style.setProperty("--sidebar-width", localStorage.getItem("sidebar-right-width"));</script></div></div></body></html>
